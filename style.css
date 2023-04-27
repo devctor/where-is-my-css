@@ -1,0 +1,120 @@
+:root {
+  --light: #e4e4f6;
+  --accent: #4744b6;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #a9a6a6;
+  --rounded: 10px;
+
+  --sm: 14px;
+  --md: 20px;
+}
+
+body {
+  font-family: Roboto;
+  background: var(--light);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100lvh;
+}
+
+.card {
+  background: var(--white);
+  padding: var(--md);
+  border-radius: var(--rounded);
+  max-width: 350px;
+  /* drop shadow here */
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.title,
+.subtitle {
+  /* font-size: 2rem; */
+  font-weight: 600;
+  text-align: center;
+}
+
+.social-login {
+  /*max-height: 4rem;*/
+  display: flex;
+  gap: 10px;
+}
+
+.social-login button {
+  border: 2px solid gray;
+  background: transparent;
+  display: flex;
+  border-radius: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.social-login button:focus-within {
+  border: 2px solid purple;
+}
+
+.social-login .google-btn {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-login .fb-btn {
+  flex-grow: 0;
+}
+
+.social-login button img {
+  height: 2rem;
+}
+
+.or {
+  isolation: isolate;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  z-index: 9;
+}
+
+.or span {
+  background: var(--white);
+  position: relative;
+  padding: 0 1rem;
+  z-index: 999;
+}
+
+.or::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  border: 1px solid rgb(170, 168, 168);
+  z-index: 22;
+}
+
+.email-login {
+  display: flex;
+  flex-flow: column;
+  gap: calc(var(--md) / 2);
+}
+
+.email-login label {
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.email-login input {
+  padding: var(--sm);
+  border: 1px solid var(--gray);
+  border-radius: var(--rounded);
+}
