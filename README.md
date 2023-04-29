@@ -1,3 +1,5 @@
-# where-is-my-css
+# where-is-my-css - Solution
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-qyiskx)
+## Author
+- Hector Ovalles
+
