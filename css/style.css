@@ -1,6 +1,7 @@
 :root {
   --light: #e4e4f6;
   --accent: #4744b6;
+  --accent-dark: #3f3bad;
   --white: #ffffff;
   --black: #000000;
   --gray: #a9a6a6;
@@ -29,7 +30,7 @@ body {
   padding: var(--md);
   border-radius: var(--rounded);
   min-width: 350px;
-  box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.16);
 }
 
 .title {
@@ -64,7 +65,7 @@ body {
 }
 
 .social-login button,
-.or::before ,
+.or::before,
 .email-login input,
 .cta-btn,
 .social-login button:focus-within {
@@ -84,7 +85,6 @@ body {
   align-items: center;
   gap: 16px;
 }
-
 
 .social-login .fb-btn {
   flex-grow: 0;
@@ -144,12 +144,16 @@ form {
 .cta-btn {
   display: flex;
   justify-content: center;
-  /* margin-block-end: var(--md); */
+  cursor: pointer;
   padding: var(--md);
   border-radius: var(--rounded);
   background-color: var(--accent);
   color: var(--white);
   text-align: center;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent-dark);
 }
 
 .forget-pass {
